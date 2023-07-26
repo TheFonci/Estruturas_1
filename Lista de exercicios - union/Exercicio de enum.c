@@ -3,22 +3,22 @@
 
 typedef enum Genero {MASCULINO, FEMININO}genero;
 
-typedef struct Pessoa{
+typedef struct{
     char nome[20];
     int idade;
     genero Genero;
-}pessoa;
+}Pessoa;
 
 int main(void){
-    pessoa Pessoa;
+    Pessoa pessoa;
     enum Genero genero;
 
     printf("Digite seu nome: ");
-    scanf(" %[^\n]", Pessoa.nome);
+    scanf(" %[^\n]", pessoa.nome);
     printf("Informe sua idade: ");
-    scanf("%d", &Pessoa.idade);
+    scanf("%d", &pessoa.idade);
     printf("Informe seu genero, 1 para masculino e 0 para feminino: ");
-    scanf("%d", &Pessoa.Genero);
+    scanf("%d", &pessoa.Genero);
     if (genero == 1){
         printf("Masculino!");
     }
