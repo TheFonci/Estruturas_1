@@ -2,6 +2,7 @@
 #include<stdlib.h>
 
 typedef enum{
+    Zero,
     Janeiro,
     Fevereiro,
     Marco,
@@ -28,7 +29,7 @@ typedef struct{
     printf("Informe o dia: \n");
     scanf("%i", &data.dia);
     printf("Informe o mês: \n");
-    scanf("%i", &data.meses);
+    scanf("%d", &data.meses);
     printf("Informe o ano: \n");
     scanf("%i", &data.ano);
 
