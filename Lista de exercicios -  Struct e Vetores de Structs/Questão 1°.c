@@ -13,21 +13,21 @@ void preencher(Funcionario **funcionario, int n){
 
       printf("\n\tFuncionario %i\n", i+1);
 
-      printf("Nome: \n");
+      printf("Nome: ");
       scanf(" %[^\n]s", funcionario[i]->nome);
-      printf("Salario: \n");
+      printf("Salario: ");
       scanf("%f", &funcionario[i]->salario);
-      printf("Identifiador: \n");
+      printf("Identifiador: ");
       scanf("%i", &funcionario[i]->identificador);
-      printf("Cargo: \n");
+      printf("Cargo: ");
       scanf(" %[^\n]s", funcionario[i]->cargo);
     }
 }
 void imprimir(Funcionario **funcionario, int n){
-        printf("\n**Funcionario cadastratos**:");
+        printf("\n**Funcionario cadastratos**\n");
     for (int i = 0; i < n; i++){
-      printf("Funcionario %i", i+1);
-      printf("Nome: %s\n", funcionario[1]->nome);
+      printf("Funcionario %i\n", i+1);
+      printf("Nome: %s\n", funcionario[i]->nome);
       printf("Salario: R$%.2f\n", funcionario[i]->salario);
       printf("Identificador: %i\n", funcionario[i]->identificador);
       printf("Cargo: %s\n", funcionario[i]->cargo);   
@@ -43,7 +43,7 @@ void Maioremenor(Funcionario **funcionario, int n){
    int i, maior, menor;
    maior = 0;
    menor = 0;
-     for (int i = 0; i < n; i++){
+     for (i = 0; i < n; i++){
      if(funcionario[i]->salario > funcionario[maior]->salario){
         maior = i;
     }
@@ -52,7 +52,7 @@ void Maioremenor(Funcionario **funcionario, int n){
     }
   }
       printf("O maior salario e: R$%.2f", funcionario[maior]->salario);
-      printf("O menor salario e: R$%.2f", funcionario[menor]->salario);
+      printf(" E o menor salario e: R$%.2f", funcionario[menor]->salario);
 }
 int main(void){
   int n;
