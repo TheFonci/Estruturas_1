@@ -38,8 +38,8 @@ int mudar_horas(Professor *professor, int n){
 }
 int main(void){
     Professor *professor;
-    int preencher;
-    int imprimir;
-    int mudar_horas;
+    preencher;
+    imprimir;
+    mudar_horas;
   return 0;
 }
