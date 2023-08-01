@@ -14,13 +14,13 @@ void preencher(Funcionario **funcionario, int n){
       printf("\n\tFuncionario %i\n", i+1);
 
       printf("Nome: ");
-      scanf(" %[^\n]s", funcionario[i]->nome);
+      scanf(" %[^\n]", funcionario[i]->nome);
       printf("Salario: ");
       scanf("%f", &funcionario[i]->salario);
       printf("Identifiador: ");
       scanf("%i", &funcionario[i]->identificador);
       printf("Cargo: ");
-      scanf(" %[^\n]s", funcionario[i]->cargo);
+      scanf(" %[^\n]", funcionario[i]->cargo);
     }
 }
 void imprimir(Funcionario **funcionario, int n){
